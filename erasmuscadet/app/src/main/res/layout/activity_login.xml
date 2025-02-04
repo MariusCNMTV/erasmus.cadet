@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_dark">
+
+    <com.cadetia.erasmuscadet.entities.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:elevation="12dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/back_button"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:src="@drawable/uni_ic_back"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/login_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/circular_bold"
+                    android:text="@string/login_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_36ssp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_below="@id/login_text"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:background="@drawable/uni_input_search"
+            android:drawableStart="@drawable/auth_custom_ic_email"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_14ssp"
+            android:textColorHint="#CCCCCC"
+            android:fontFamily="@font/circular_medium"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_below="@id/login_email"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_14sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:background="@drawable/uni_input_search"
+            android:drawableStart="@drawable/auth_custom_ic_password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_14ssp"
+            android:textColorHint="#CCCCCC"
+            android:fontFamily="@font/circular_medium"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_below="@id/login_password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/circular_bold"
+            android:orientation="vertical"
+            android:text="@string/login_title"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck,DuplicateSpeakableTextCheck,VisualLintBounds" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gradient_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center|top"
+        android:background="@drawable/gradient_top_transparent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

@@ -18,7 +18,7 @@
 
     <string name="back_button">Back Button</string>
 
-    <string name="main_title">Nature\'s way to organize.</string>
+    <string name="main_title">Erasmus+ 2025</string>
     <string name="main_google">Continue with Google</string>
     <string name="main_facebook">Continue with Facebook</string>
 
@@ -59,7 +59,6 @@
     <string name="home_note_subtitle">Note Subtitle</string>
     <string name="home_type_note_here">Type note here...</string>
     <string name="create_note_add">Add</string>
-
 
 
     <string name="id_AppOpenAdd">ca-app-pub-8447567589954533/1110300440</string>

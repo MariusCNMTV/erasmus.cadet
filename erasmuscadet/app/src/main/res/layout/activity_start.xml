@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_animation">
 
+    <com.cadetia.erasmuscadet.entities.LoadingView
+        android:id="@+id/loadingViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:elevation="12dp"/>
+
     <ImageView
         android:id="@+id/img"
         android:layout_width="@dimen/_80sdp"
@@ -14,7 +22,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/_130sdp"
         android:src="@drawable/uni_icon"
-        app:tint="@color/primary"
         android:contentDescription="@string/main_title" />
 
     <LinearLayout

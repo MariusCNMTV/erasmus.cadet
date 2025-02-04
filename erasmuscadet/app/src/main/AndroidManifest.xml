@@ -13,20 +13,31 @@
         android:theme="@style/Theme.ErasmusCadet"
         tools:targetApi="31">
         <activity
-            android:name=".Start"
-            android:exported="false"
-            android:theme="@style/Theme.ErasmusCadet" />
-        <activity
-            android:name=".MainActivity"
+            android:name ="com.cadetia.erasmuscadet.StartActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.ErasmusCadet.NoActionBar">
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErasmusCadet.NoActionBar">
         </activity>
     </application>
 
 </manifest>
+

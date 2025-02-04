@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "355340900933",
+    "project_id": "erasmus-cadet",
+    "storage_bucket": "erasmus-cadet.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355340900933:android:b9717f89ea84343276612c",
+        "android_client_info": {
+          "package_name": "com.cadetia.erasmuscadet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB258vUxNH44u_POIkFQoWhwQnRIAnb2Zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
