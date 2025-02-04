@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:src="@drawable/uni_icon"
+        app:tint="@color/primary"
+        android:contentDescription="@string/main_title" />
+
+    <LinearLayout
+        android:id="@+id/main_text"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/img"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical"
+        tools:ignore="TextSizeCheck">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/circular_bold"
+            android:text="@string/main_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_35ssp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_signup_button"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@id/main_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/button_green"
+        android:fontFamily="@font/circular_bold"
+        android:orientation="vertical"
+        android:text="@string/signup_title"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/main_google_button"
+        android:layout_width="@dimen/_255sdp"
+        android:layout_height="@dimen/_39sdp"
+        android:layout_below="@id/main_signup_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:drawableStart="@drawable/auth_ic_google"
+        android:paddingEnd="@dimen/_26sdp"
+        android:paddingStart="@dimen/_18sdp"
+        android:background="@drawable/button_social"
+        android:fontFamily="@font/circular_bold"
+        android:textSize="@dimen/_13ssp"
+        android:text="@string/main_google"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/main_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_below="@+id/main_google_button"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/circular_bold"
+        android:text="@string/login_title"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        tools:ignore="VisualLintBounds" />
+
+
+</RelativeLayout>

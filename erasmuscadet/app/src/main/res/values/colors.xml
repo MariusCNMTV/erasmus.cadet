@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="black">#141414</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light">#aaaaaa</color>
+    <color name="gray">#7d7d7d</color>
+
+    <color name="transparent">#000000</color>
+    <color name="blur">#BF000000</color>
+    <color name="opaque">#88000000</color>
+    <color name="focus">#66000000</color>
+    <color name="nothing">#00000000</color>
+
+    <color name="special_background">#1c1c1c</color>
+    <color name="special_black">#222224</color>
+    <color name="special_light">#626262</color>
+    <color name="special_dark">#464646</color>
+    <color name="special_gray">#5a5a5a</color>
+
+    <color name="perfect_black">#1E1E1E</color>
+
+    <color name="blurred_white">#0DFFFFFF</color>
+    <color name="opaqued_white">#1AFFFFFF</color>
+    <color name="focused_white">#0CFFFFFF</color>
+    <color name="transparent_white">#05FFFFFF</color>
+
+    <color name="background">#121212</color>
+    <color name="accent">#212121</color>
+    <color name="secondary">#2C2C2C</color>
+    <color name="primary">#626ad9</color>
+    <color name="primary_transparent">#6257cd</color>
+
+    <color name="green_light">#1ED760</color>
+    <color name="green_medium">#1DB954</color>
+    <color name="green_dark">#801DB954</color>
+
+    <color name="blue">#4100F5</color>
+    <color name="green">#5896e3</color>
+    <color name="yellow">#DDBA4E</color>
+    <color name="red">#D9FA5750</color>
+    <color name="red_transparent">#80FA5750</color>
+
+
+    <color name="first">#FEBB3A</color>
+    <color name="first_light">#F8C96F</color>
+    <color name="third">#AE844F</color>
+    <color name="second">#BFBFC0</color>
+
+
+    <color name="spearmint">#4B917D</color>
+    <color name="citric">#cdf564</color>
+    <color name="fuchsia">#f037a5</color>
+    <color name="aquamarine">#9bf0e1</color>
+</resources>
