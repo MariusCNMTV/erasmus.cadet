@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.WindowCompat;
 
+import com.cadetia.erasmuscadet.ui.home.HomeFragment;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -95,8 +96,8 @@ public class StartActivity extends AppCompatActivity {
         // Set onClick listeners
         main_signup_button.setOnClickListener(v -> animateButtonOnClick(main_signup_button, Signup.class));
 
-        main_login_button.setOnClickListener(v -> animateButtonOnClick(main_login_button, Login.class));
-
+        //main_login_button.setOnClickListener(v -> animateButtonOnClick(main_login_button, Login.class));
+        main_login_button.setOnClickListener(v -> openHomeActivity());
         main_google_button.setOnClickListener(v -> {
             animateButtonOnClickNull(main_google_button);
             buttonGoogleSignIn(v);
